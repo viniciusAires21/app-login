@@ -1,0 +1,48 @@
+@import "style/variaveis";
+@import "style/breakpoints";
+
+.botoes {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 30%;
+
+  &__botao {
+    padding: 5px 10px;
+    color: $cinzaClaro;
+    background-color: transparent;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border: 1px solid $primaria;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 5%;
+
+    &:hover {
+      background: $primaria;
+      color: #fff;
+      box-shadow: 0 0 5px $primaria, 0 0 25px $primaria, 0 0 50px $primaria,
+        0 0 100px $primaria;
+    }
+  }
+}
+
+.conteudo {
+  width: 40vw;
+  height: 30vh;
+  margin: 35vh 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $secundaria;
+  border-radius: 12px;
+  color: $branco;
+  font-family: monospace;
+  font-size: 16px;
+}
